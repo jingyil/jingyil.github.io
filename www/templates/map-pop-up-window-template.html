@@ -1,0 +1,43 @@
+<md-bottom-sheet>
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <img src="img/tab-one-header-img.png" alt="Space information header image">
+      </md-card-title-text>
+    </md-card-title>
+
+    <md-card-actions>
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+      <md-button class="md-raised">
+        <md-icon style="margin-bottom: 3px;">star_rate</md-icon>
+        Favorited
+      </md-button>
+
+      <md-button class="md-raised md-warn" ng-click="showAdvanced($event)">
+        Directions -
+        <md-icon style="margin-bottom: 5px;">directions_car</md-icon>
+        7 min
+      </md-button>
+      </section>
+    </md-card-actions>
+
+    <md-card-content>
+      <div ng-cloak>
+        <md-content>
+          <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="Space Info">
+              <md-content class="md-padding">
+                <img style="width: 100%; margin-top: 17px" src="img/tab-one-img.png" alt="Space information image">
+              </md-content>
+            </md-tab>
+            <md-tab label="Daily Trend">
+              <md-content class="md-padding">
+                <img style="width: 100%; margin-top: 10px" src="img/tab-two-img.png" alt="Daily Trend image">
+              </md-content>
+            </md-tab>
+          </md-tabs>
+        </md-content>
+      </div>
+    </md-card-content>
+  </md-card>
+</md-bottom-sheet>
